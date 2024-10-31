@@ -58,6 +58,8 @@ class LocalBase():
         print("train",class_distribution_train)
         print("test",class_distribution_test)
 
+
+    # Add confusion matrix to test performance
     def local_validate(self,model):
         model.eval()
         model.to(self.device)
