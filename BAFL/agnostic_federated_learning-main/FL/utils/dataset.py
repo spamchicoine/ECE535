@@ -88,7 +88,7 @@ def iid(dataset, args):
     return idx_map
 
 def from_csv(dataset, args):
-    csv_dir = os.path.join(args.root_path,'ECE535\\BAFL\\agnostic_federated_learning-main\\config',args.from_csv+'.csv')
+    csv_dir = os.path.join(args.root_path,'C:\\Users\\Nate\\Documents\\GitHub\\ECE535\\BAFL\\agnostic_federated_learning-main\\config',args.from_csv+'.csv')
     dist_config=np.loadtxt(csv_dir, delimiter=',')
     idx_map = {i: np.array([]) for i in range(len(dist_config))}
     if type(dataset.targets) is list:

@@ -34,4 +34,4 @@ if __name__ == '__main__':
     if args.seed:
         set_global_seeds(args.seed_num)
 
-    main(args)
+    main(args) 
